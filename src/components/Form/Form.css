@@ -1,3 +1,15 @@
+.Container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 100px 60px 100px;
+    padding: 40px 0;
+    max-width: 700px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+    background-color: #F6F6F6;
+}
 
 .Form {
 
@@ -5,17 +17,13 @@
     flex-direction: column;
     align-items: baseline;
     gap: 20px;
-    padding: 20px 60px 20px 60px;
-    background-color: #F6F6F6;
-    border-radius: 20px;
-    box-shadow: 10px 10px 30px rgba(0,0,0,0.06);
-    max-width: 700px;
-    margin: 60px 100px 60px 100px;
+    width: 80%;
 }
 
 .Form-Header {
 
     font-size: 40px;
+    margin: 0 0 10px 0;
 }
 
 .TextField {
@@ -23,14 +31,7 @@
     width: 100%;
 }
 
-.Form-Button {
+.DropDownField {
 
-    background-color: #6278F7;
-    border-width: 0;
-    border-radius: 10px;
-    color: white;
-    font-size: 25px;
-    height: 80px;
-    width: 200px;
-    margin-top: 20px;
+    width: 100%;
 }

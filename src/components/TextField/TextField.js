@@ -5,7 +5,7 @@ const TextField = (args) => {
     return (
         <div className='TextField'>
             <label className='label'>{args.label}</label>
-            <input className='input' placeholder={args.placeholder} ></input>
+            <input value={args.value} onChange={event => args.setValue(event.target.value)} required={args.required} className='input' placeholder={args.placeholder} ></input>
             <span className='error'></span>
         </div>
     )

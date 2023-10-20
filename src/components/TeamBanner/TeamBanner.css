@@ -1,10 +1,6 @@
-.banner {
+.TeamBanner {
     background-color: #6278F7;
     text-align: center;
     width: 100%;
-}
-
-.banner img {
-    max-width: 70%;
-    max-height: 70%;
+    margin: 100px;
 }
