@@ -1,12 +1,13 @@
 import './DropDownField.css'
 
-const DropDownField = (args) => {
+const DropDownField = ({value,setValue,required,label,list,placeholder}) => {
 
     return (
         <div className='DropDownField'>
-            <label>{args.label}</label>
-            <select value={args.value} onChange={event => args.setValue(event.target.value)} required={args.required}>
-                {args.list.map(item => <option key={item}>{item}</option>)}
+            <label>{label}</label>
+            <select value={value} onChange={event => setValue(event.target.value)} required={required} placeholder={placeholder}>
+                <option value=""></option>
+                {list.map(item => <option key={item}>{item}</option>)}
             </select>
             <span className='error'></span>
         </div>

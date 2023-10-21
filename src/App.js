@@ -13,9 +13,8 @@ function App() {
   return (
     <div className="App">
       <Banner/>
-      <Form saveData={(pessoa) => setPessoas([...pessoas,pessoa])} />
-      <h1>{JSON.stringify(pessoas)}</h1> 
-      {dataTimes.map((time) => <TeamBanner nome={time} />)}
+      <Form times={dataTimes.map(time => time.nome)} saveData={(pessoa) => setPessoas([...pessoas,pessoa])} />
+      {dataTimes.map((time) => <TeamBanner time={time} key={time.nome} pessoas={pessoas.filter( pessoa => pessoa.time === time.nome)}/>)}
     </div>
   );
 }

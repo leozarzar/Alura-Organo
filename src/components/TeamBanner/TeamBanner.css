@@ -1,6 +1,25 @@
 .TeamBanner {
-    background-color: #6278F7;
+
     text-align: center;
     width: 100%;
-    margin: 100px;
+}
+
+.TeamBanner h3{
+    
+    font-size: 32px;
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 4px solid;
+    margin: 32px 0 32px 0;
+}
+
+.Cards{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0 0 32px 0;
 }

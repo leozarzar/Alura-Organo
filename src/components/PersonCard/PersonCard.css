@@ -1,0 +1,54 @@
+.PersonCard {
+
+    border-radius: 10px;
+    background-color: white;
+    width: 275px;
+    height: 275px;
+}
+
+.divA {
+    border-radius: 15px 15px 0 0;
+    height: 35%;
+}
+
+.PersonCard img{
+
+    border-radius: 50%;
+    position: relative;
+    top: 45%;
+    width: 125px;
+    height: 125px;
+}
+
+.divB {
+    border-radius: 0 0 15px 15px;
+    height: 65%;
+    padding-top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.PersonCard h4{
+    font-size: 18px;
+    color: #6278F7;
+    font-weight: 700;
+    margin: 0 20px 0 20px;
+}
+
+.PersonCard h5{
+    font-size: 16px;
+    font-weight: 200;
+    margin: 0 20px 0 20px;
+}
+
+.divC {
+
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+

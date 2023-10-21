@@ -1,11 +1,11 @@
 import './TextField.css'
 
-const TextField = (args) => {
+const TextField = ({value,setValue,label,required,placeholder}) => {
 
     return (
         <div className='TextField'>
-            <label className='label'>{args.label}</label>
-            <input value={args.value} onChange={event => args.setValue(event.target.value)} required={args.required} className='input' placeholder={args.placeholder} ></input>
+            <label className='label'>{label}</label>
+            <input value={value} onChange={event => setValue(event.target.value)} required={required} className='input' placeholder={placeholder} ></input>
             <span className='error'></span>
         </div>
     )

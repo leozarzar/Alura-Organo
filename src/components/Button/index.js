@@ -1,8 +1,8 @@
 import './Button.css'
 
-const Button = (args) => {
+const Button = ({label}) => {
 
-    return (<button> {args.label} </button>)
+    return (<button> {label} </button>)
 }
 
 export default Button;
