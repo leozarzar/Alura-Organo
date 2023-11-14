@@ -2,7 +2,7 @@ import './Button.css'
 
 const Button = ({label}) => {
 
-    return (<button> {label} </button>)
+    return (<button className="button"> {label} </button>)
 }
 
 export default Button;

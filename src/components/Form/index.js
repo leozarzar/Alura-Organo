@@ -14,12 +14,19 @@ const Form = ({times,saveData}) => {
     const receiveData = (event) => {
 
         event.preventDefault();
-        saveData({
+
+        const newPessoa = {
             nome: Nome,
             cargo: Cargo,
             imagem: Imagem,
-            time: Time
-        })
+            time: Time,
+            fav: false
+        };
+
+        saveData(newPessoa);
+
+        const storedData = JSON.parse(localStorage.getItem("pessoas")) == null ? [] : JSON.parse(localStorage.getItem("pessoas"));
+        localStorage.setItem("pessoas",JSON.stringify([...storedData,newPessoa]));
 
         setNome('');
         setCargo('');
